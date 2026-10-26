@@ -1,0 +1,341 @@
+<style>
+.rc { font-family: var(--font-anthropic-sans); display: flex; flex-direction: column; gap: var(--cds-gap-xl); }
+.rc h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; }
+.rc h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0 0 var(--cds-gap-xs); }
+.rc h3 { font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); margin: 0; }
+.rc .muted { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.rc .take { margin: var(--cds-gap-xs) 0 0; color: var(--color-fg-muted); }
+.rc .filters { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm); align-items: end; position: sticky; top: 0; z-index: 2; background: var(--color-bg); padding: var(--cds-pad-sm) 0; border-bottom: 1px solid var(--color-border-line); }
+.rc .filters label { display: flex; flex-direction: column; gap: 4px; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); flex: 1 1 11rem; min-width: 0; }
+.rc select, .rc input[type=search] { width: 100%; padding: 6px 10px; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); background: var(--color-panel); color: var(--color-fg); font: inherit; font-size: var(--cds-font-size-body); }
+.rc button.btn { padding: 7px 12px; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); background: var(--color-panel); color: var(--color-fg); font: inherit; cursor: pointer; }
+.rc button.btn[aria-pressed=true] { background: var(--color-fg); color: var(--color-bg); }
+.rc .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 11rem), 1fr)); gap: var(--cds-gap-md); }
+.rc .card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); min-width: 0; }
+.rc .tile .num { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; margin-top: var(--cds-gap-xs); }
+.rc .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
+.rc .bars { margin-top: var(--cds-gap-sm); }
+.rc .row { display: grid; grid-template-columns: minmax(7rem, 40%) 1fr auto; align-items: center; gap: var(--cds-gap-sm); font-size: var(--cds-font-size-caption); padding: 3px 0; }
+.rc .row .lbl { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.rc .row .sub { display: block; color: var(--color-fg-muted); font-size: 0.68rem; overflow: hidden; text-overflow: ellipsis; }
+.rc .row .track { display: flex; height: 12px; }
+.rc .row .bar { height: 12px; background: var(--cds-chart-muted); min-width: 2px; }
+.rc .row .bar:first-child { border-radius: 6px 0 0 6px; } .rc .row .bar:last-child { border-radius: 0 6px 6px 0; } .rc .row .bar:only-child { border-radius: 6px; }
+.rc .row .bar.b2 { opacity: .55; }
+.rc .row.us .bar { background: var(--rc-accent); }
+.rc .row.us .lbl { font-weight: var(--cds-font-weight-medium); }
+.rc .row .val { font-variant-numeric: tabular-nums; min-width: 2.2rem; text-align: right; }
+.rc .legend { display: flex; gap: var(--cds-gap-md); flex-wrap: wrap; margin-top: var(--cds-gap-xs); }
+.rc .legend span::before { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; background: var(--cds-chart-muted); }
+.rc .legend span.l2::before { opacity: .55; }
+.rc .legend span.lu::before { background: var(--rc-accent); }
+.rc .sw { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
+.rc ul { margin: var(--cds-gap-sm) 0 0; padding-left: 1.1rem; display: flex; flex-direction: column; gap: var(--cds-gap-sm); }
+.rc li { line-height: 1.45; }
+.rc .bad h2 { color: var(--color-bad); } .rc .ok h2 { color: var(--color-ok); }
+.rc .tabs { display: flex; gap: var(--cds-gap-xs); margin: var(--cds-gap-sm) 0; flex-wrap: wrap; }
+.rc .tblwrap { max-height: 30rem; overflow: auto; margin-top: var(--cds-gap-sm); }
+.rc table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+.rc th, .rc td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+.rc th { position: sticky; top: 0; background: var(--color-panel); }
+.rc th button { all: unset; cursor: pointer; font-weight: var(--cds-font-weight-medium); }
+.rc td.n, .rc th.n { text-align: right; }
+.rc tr.us td { font-weight: var(--cds-font-weight-medium); }
+.rc .empty { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); padding: var(--cds-pad-md) 0; }
+.rc .fail { display: flex; align-items: center; justify-content: center; gap: 6px; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); min-height: 6rem; }
+.rc .fail::before { content: ""; width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+[data-dash-source-state=empty] { color: transparent; }
+[data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+@media (max-width: 640px) { .rc .hide-sm { display: none; } }
+</style>
+<div class="rc">
+  <header id="topo">
+    <h1>Radar de concorrência — concessionárias 4 rodas</h1>
+    <p class="take" id="takeaway" data-source="resumo_cidades">—</p>
+    <p class="muted">Cáceres (Volkswagen) · Tangará da Serra, Sinop, Rondonópolis, Ji-Paraná e Vilhena (Hyundai). Checagem toda segunda-feira.</p>
+  </header>
+
+  <section class="filters" id="filtros" aria-label="Filtros">
+    <label>Loja Grupo Cometa
+      <select id="f-praca" data-source="meta"></select>
+    </label>
+    <label>Marca concorrente
+      <select id="f-marca" data-source="meta instagram"></select>
+    </label>
+    <label>Concorrente
+      <select id="f-conc" data-source="meta instagram"></select>
+    </label>
+    <button class="btn" id="f-reset" type="button">Limpar filtros</button>
+  </section>
+
+  <section class="tiles" id="kpis">
+    <div class="card tile"><div class="muted">Anúncios ativos Meta — Cometa</div><div class="num dash-skeleton" data-source="kpis" data-field="cometa_ads" data-where="cidade=Todas">—</div></div>
+    <div class="card tile"><div class="muted">Anúncios ativos Meta — concorrentes</div><div class="num dash-skeleton" data-source="kpis" data-field="conc_ads" data-where="cidade=Todas">—</div></div>
+    <div class="card tile"><div class="muted">Posts + Reels orgânicos (7 dias) — Cometa</div><div class="num dash-skeleton" data-source="kpis" data-field="cometa_posts7" data-where="cidade=Todas">—</div></div>
+    <div class="card tile"><div class="muted">Média por perfil concorrente (7 dias)</div><div class="num dash-skeleton" data-source="kpis" data-field="conc_media7" data-where="cidade=Todas">—</div></div>
+  </section>
+  <p class="muted" id="kpi-note" style="margin-top:calc(-1 * var(--cds-gap-md))">Os cartões acima seguem o filtro de loja.</p>
+
+  <section id="instagram">
+    <h2>Instagram orgânico — volumetria dos últimos 7 dias</h2>
+    <p class="muted">Posts de feed e Reels publicados no perfil (Stories não entram), contados a partir da grade do perfil. Perfis regionais (°) atendem várias cidades.</p>
+    <div class="legend muted"><span class="lu">Cometa</span><span>Posts de feed</span><span class="l2">Reels</span></div>
+    <div class="grid" id="ig-cidades" data-source="instagram"></div>
+  </section>
+
+  <section id="meta-pracas">
+    <h2>Biblioteca de anúncios da Meta — anúncios ativos</h2>
+    <p class="muted">Anúncios ativos por página no dia da checagem. Páginas regionais (°) anunciam para várias cidades. Escala própria em cada cartão.</p>
+    <div class="grid" id="cidades" data-source="meta"></div>
+  </section>
+
+  <section id="google-sec" class="card">
+    <h2>Central de transparência do Google</h2>
+    <p class="muted">Número aproximado de anúncios por anunciante (razão social), Brasil. Grupos com vários CNPJs somados. Segue o filtro de loja.</p>
+    <div class="bars" id="gbars" data-source="google"></div>
+  </section>
+
+  <section class="sw" id="analise">
+    <div class="card bad"><h2>Ameaças</h2>
+      <ul>
+        <li><b>Hyundai Cometa Sinop está sem publicar no Instagram há dez dias</b>, enquanto Chevrolet Vianorte, Renault Morel e Jeep Monte Cristo publicaram quase todo dia na semana.</li>
+        <li><b>Ji-Paraná e Vilhena quase sem anúncio pago</b>: o único anúncio ativo de cada página é antigo, e Jirauto, Vemaq BYD, Nissey, Fiat Autovema e Mazzutti estão rodando agora.</li>
+        <li><b>Saga Hyundai MT disputa o mesmo cliente Hyundai</b>: a página regional tem 70 anúncios ativos (mais que as seis páginas Hyundai Cometa somadas) com Creta PCD, HB20 para CNPJ, "carro novo sem juros", Kona Híbrido e i20. As lojas ficam em Cuiabá e Várzea Grande, mas o alcance pago chega a Tangará, Sinop e Rondonópolis.</li>
+        <li><b>Disbrava Ford entra em Cáceres sem ter loja lá</b>, com Ranger em bônus ou taxa zero citando a cidade.</li>
+        <li><b>Páginas regionais com volume alto</b>: BYD Saga MT, Toyota Canopus MT, Carolina VW e Saga Gramarca publicam e anunciam para várias praças ao mesmo tempo.</li>
+        <li><b>No Google o grupo aparece pequeno</b> frente a Raviera, Fancar, Sunauto e Domani.</li>
+      </ul>
+    </div>
+    <div class="card ok"><h2>Oportunidades</h2>
+      <ul>
+        <li><b>Retomar a rotina de Sinop</b> com calendário mínimo de feed e Reels, e reativar campanhas sempre ligadas em Ji-Paraná e Vilhena.</li>
+        <li><b>Equilibrar formato</b>: em Ji-Paraná e Vilhena a Cometa só publicou Reels na semana; concorrentes alternam ofertas no feed (carrossel de preço) com Reels.</li>
+        <li><b>Ganchos que os concorrentes usam e que não aparecem nos títulos dos nossos anúncios</b>: primeira parcela só em 2027 (Sunauto), taxa zero ou reduzida em destaque, condições para motorista de app (Autovema), oferta para CNPJ (Carevel), PCD (Nissan Saga, Raviera).</li>
+        <li><b>Rondonópolis é a melhor praça orgânica da Cometa</b> (maior base de seguidores entre as lojas e ritmo de posts acima da média local): replicar o modelo nas outras lojas Hyundai.</li>
+        <li><b>Consultores anunciando por conta própria</b>: padronizar criativo e oferta das páginas de vendedores para reforçar a marca.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="card" id="tabela">
+    <h2>Detalhe por perfil e página</h2>
+    <div class="tabs" role="tablist">
+      <button class="btn" type="button" data-tab="ig" aria-pressed="true">Instagram orgânico</button>
+      <button class="btn" type="button" data-tab="meta" aria-pressed="false">Anúncios Meta</button>
+    </div>
+    <input type="search" id="busca" placeholder="Buscar perfil, página ou marca" aria-label="Buscar">
+    <div class="tblwrap" id="wrap-ig">
+      <table data-source="instagram" data-row-key="key" id="t-ig">
+        <thead><tr>
+          <th data-field="cidade"><button data-k="cidade">Cidade</button></th>
+          <th data-field="concorrente"><button data-k="concorrente">Loja / concorrente</button></th>
+          <th data-field="perfil"><button data-k="perfil">Perfil</button></th>
+          <th data-field="marca" class="hide-sm"><button data-k="marca">Marca</button></th>
+          <th data-field="seguidores" class="n"><button data-k="seguidores">Seguidores</button></th>
+          <th data-field="posts_7d" class="n"><button data-k="posts_7d">Posts 7d</button></th>
+          <th data-field="reels_7d" class="n"><button data-k="reels_7d">Reels 7d</button></th>
+          <th data-field="total_7d" class="n"><button data-k="total_7d">Total 7d</button></th>
+          <th data-field="ultimo_post" class="hide-sm"><button data-k="ultimo_post">Último post</button></th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="tblwrap" id="wrap-meta" hidden>
+      <table data-source="meta" data-row-key="key" id="t-meta">
+        <thead><tr>
+          <th data-field="cidade"><button data-k="cidade">Cidade</button></th>
+          <th data-field="concorrente"><button data-k="concorrente">Loja / concorrente</button></th>
+          <th data-field="pagina"><button data-k="pagina">Página</button></th>
+          <th data-field="marca" class="hide-sm"><button data-k="marca">Marca</button></th>
+          <th data-field="anuncios_ativos" class="n"><button data-k="anuncios_ativos">Ativos</button></th>
+          <th data-field="alcance" class="hide-sm"><button data-k="alcance">Alcance</button></th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+</div>
+<script>
+(function(){
+  const CID = ["Cáceres","Tangará da Serra","Sinop","Rondonópolis","Ji-Paraná","Vilhena"];
+  const LOJA = {"Cáceres":"Cometa Volkswagen · Cáceres","Tangará da Serra":"Hyundai Cometa · Tangará da Serra","Sinop":"Hyundai Cometa · Sinop","Rondonópolis":"Hyundai Cometa · Rondonópolis","Ji-Paraná":"Hyundai Cometa · Ji-Paraná","Vilhena":"Hyundai Cometa · Vilhena"};
+  const f = d3.format(',');
+  const f1 = d3.format(',.1f');
+  const fdate = (s) => s && s !== '-' ? s.slice(8,10) + '/' + s.slice(5,7) : '—';
+  document.querySelector('.rc').style.setProperty('--rc-accent', dash.colors[0]);
+
+  dash.calc('kpis', {
+    title: 'Totais por loja',
+    description: 'Por cidade e no total: anúncios ativos Meta (Cometa e concorrentes, cada página contada uma vez), posts+Reels de 7 dias da Cometa e a média por perfil concorrente.',
+    inputs: ['meta', 'instagram'],
+    fn: (meta, instagram) => {
+      const one = (c) => {
+        const ms = meta.filter(r => c === 'Todas' || r.cidade === c);
+        const is = instagram.filter(r => c === 'Todas' || r.cidade === c);
+        const pages = new Map(); ms.filter(r => r.lado === 'Concorrente' && r.page_id).forEach(r => pages.set(r.page_id, Number(r.anuncios_ativos)));
+        const profs = new Map(); is.filter(r => r.lado === 'Concorrente').forEach(r => profs.set(r.perfil, Number(r.total_7d)));
+        const pv = [...profs.values()];
+        return {
+          cidade: c,
+          cometa_ads: ms.filter(r => r.lado === 'Grupo Cometa').reduce((a, r) => a + Number(r.anuncios_ativos), 0),
+          conc_ads: [...pages.values()].reduce((a, b) => a + b, 0),
+          cometa_posts7: is.filter(r => r.lado === 'Grupo Cometa').reduce((a, r) => a + Number(r.total_7d), 0),
+          conc_media7: pv.length ? Math.round(10 * pv.reduce((a, b) => a + b, 0) / pv.length) / 10 : 0
+        };
+      };
+      return ['Todas', 'Cáceres', 'Tangará da Serra', 'Sinop', 'Rondonópolis', 'Ji-Paraná', 'Vilhena'].map(one);
+    }
+  });
+
+  dash.calc('resumo_cidades', {
+    title: 'Resumo por praça',
+    description: 'Por cidade: anúncios ativos e posts de 7 dias da Cometa, e quantos concorrentes locais superam a Cometa em cada um.',
+    inputs: ['meta', 'instagram'],
+    fn: (meta, instagram) => ['Cáceres', 'Tangará da Serra', 'Sinop', 'Rondonópolis', 'Ji-Paraná', 'Vilhena'].map(c => {
+      const ms = meta.filter(r => r.cidade === c), is = instagram.filter(r => r.cidade === c);
+      const ads = ms.filter(r => r.lado === 'Grupo Cometa').reduce((a, r) => a + Number(r.anuncios_ativos), 0);
+      const p7 = is.filter(r => r.lado === 'Grupo Cometa').reduce((a, r) => a + Number(r.total_7d), 0);
+      return { cidade: c, cometa_ads: ads, cometa_posts7: p7,
+        ads_atras: ms.filter(r => r.lado === 'Concorrente' && r.alcance === 'Local' && Number(r.anuncios_ativos) > ads).length,
+        posts_atras: is.filter(r => r.lado === 'Concorrente' && r.alcance === 'Local' && Number(r.total_7d) > p7).length };
+    })
+  });
+
+  // filtros
+  const sP = document.getElementById('f-praca'), sM = document.getElementById('f-marca'), sC = document.getElementById('f-conc');
+  sP.addEventListener('change', () => dash.setParams({ praca: sP.value || null, concorrente: null }));
+  sM.addEventListener('change', () => dash.setParams({ marca: sM.value || null, concorrente: null }));
+  sC.addEventListener('change', () => dash.setParams({ concorrente: sC.value || null }));
+  document.getElementById('f-reset').addEventListener('click', () => dash.resetParams());
+
+  let tab = 'ig', sortK = { ig: 'total_7d', meta: 'anuncios_ativos' }, sortDir = { ig: -1, meta: -1 }, q = '';
+  const NUM = new Set(['seguidores', 'posts_7d', 'reels_7d', 'total_7d', 'anuncios_ativos']);
+  document.querySelectorAll('#tabela [data-tab]').forEach(b => b.addEventListener('click', () => { tab = b.dataset.tab; draw(); }));
+  document.querySelectorAll('#tabela th button').forEach(b => b.addEventListener('click', () => {
+    const k = b.dataset.k; sortDir[tab] = (sortK[tab] === k) ? -sortDir[tab] : (NUM.has(k) ? -1 : 1); sortK[tab] = k; draw();
+  }));
+  document.getElementById('busca').addEventListener('input', e => { q = e.target.value.toLowerCase(); draw(); });
+
+  const fillSelect = (sel, all, opts, val) => {
+    sel.replaceChildren(new Option(all, ''), ...opts.map(o => new Option(o[1], o[0])));
+    sel.value = opts.some(o => o[0] === val) ? val : '';
+  };
+  const passes = (r, p) => (!p.praca || r.cidade === p.praca) && (r.lado === 'Grupo Cometa' || ((!p.marca || r.marca === p.marca) && (!p.concorrente || r.concorrente === p.concorrente)));
+
+  function bars(el, rows, o) {
+    el.textContent = '';
+    if (!rows.length) { const e = document.createElement('div'); e.className = 'empty'; e.textContent = 'Nada com esses filtros.'; el.appendChild(e); return; }
+    const max = d3.max(rows, o.total) || 1;
+    rows.forEach(r => {
+      const row = document.createElement('div'); row.className = 'row' + (o.us(r) ? ' us' : '');
+      const l = document.createElement('div'); l.className = 'lbl'; l.title = o.name(r);
+      l.textContent = o.name(r) + (o.reg && o.reg(r) ? ' °' : '');
+      if (o.sub) { const s = document.createElement('span'); s.className = 'sub'; s.textContent = o.sub(r); l.appendChild(s); }
+      const t = document.createElement('div'); t.className = 'track';
+      (o.parts ? o.parts(r) : [o.total(r)]).forEach((v, i) => { if (v <= 0 && o.parts) return; const b = document.createElement('div'); b.className = 'bar' + (i ? ' b2' : ''); b.style.width = (100 * v / max) + '%'; t.appendChild(b); });
+      const v = document.createElement('div'); v.className = 'val'; v.textContent = o.label ? o.label(r) : f(o.total(r));
+      row.append(l, t, v); el.appendChild(row);
+    });
+  }
+  const fail = (el) => { el.innerHTML = ''; const d = document.createElement('div'); d.className = 'fail'; d.textContent = 'Failed to load'; el.appendChild(d); };
+
+  function draw() {
+    const m = dash.data('meta'), ig = dash.data('instagram'), g = dash.data('google'), k = dash.data('kpis'), s = dash.data('resumo_cidades');
+    const p = dash.params();
+    const okM = m.status === 'ok', okI = ig.status === 'ok';
+
+    // filtros
+    const allRows = [...(okM ? m.data : []), ...(okI ? ig.data : [])].filter(r => r.lado === 'Concorrente');
+    fillSelect(sP, 'Todas as lojas', CID.map(c => [c, LOJA[c]]), p.praca ?? '');
+    const inPraca = allRows.filter(r => !p.praca || r.cidade === p.praca);
+    fillSelect(sM, 'Todas as marcas', [...new Set(inPraca.map(r => r.marca).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'pt')).map(x => [x, x]), p.marca ?? '');
+    const inMarca = inPraca.filter(r => !p.marca || r.marca === p.marca);
+    fillSelect(sC, 'Todos os concorrentes', [...new Set(inMarca.map(r => r.concorrente))].sort((a, b) => a.localeCompare(b, 'pt')).map(x => [x, x]), p.concorrente ?? '');
+
+    // KPIs
+    const kc = p.praca || 'Todas';
+    document.querySelectorAll('#kpis [data-source="kpis"]').forEach(el => {
+      el.setAttribute('data-where', 'cidade=' + encodeURIComponent(kc));
+      const row = k.status === 'ok' ? k.data.find(r => r.cidade === kc) : null;
+      if (row) { const v = row[el.dataset.field]; el.textContent = el.dataset.field === 'conc_media7' ? f1(v) : f(v); el.classList.remove('dash-skeleton'); } else el.textContent = '—';
+    });
+    document.getElementById('kpi-note').textContent = p.praca ? 'Cartões de ' + LOJA[p.praca] + '. Marca e concorrente filtram os gráficos e a tabela.' : 'Cartões de todas as lojas. Marca e concorrente filtram os gráficos e a tabela.';
+
+    // takeaway
+    const tk = document.getElementById('takeaway');
+    if (s.status === 'ok') {
+      const semPost = s.data.filter(r => r.cometa_posts7 === 0).map(r => r.cidade);
+      const semAds = s.data.filter(r => r.cometa_ads <= 1).map(r => r.cidade);
+      const atrasP = s.data.filter(r => r.posts_atras > 0).length;
+      let t = `Em ${atrasP} de ${s.data.length} praças há concorrente local publicando mais que a Cometa no Instagram.`;
+      if (semPost.length) t += ` ${semPost.join(' e ')} ficou sem post na semana.`;
+      if (semAds.length) t += ` ${semAds.join(' e ')} está praticamente sem anúncio ativo.`;
+      tk.textContent = t;
+    } else tk.textContent = '—';
+
+    const cities = p.praca ? [p.praca] : CID;
+    const cardFor = (c, idp) => { const card = document.createElement('div'); card.className = 'card'; card.id = idp + c.normalize('NFD').replace(/[^\w]/g, '').toLowerCase(); const h = document.createElement('h3'); h.textContent = LOJA[c]; card.appendChild(h); return card; };
+
+    // Instagram
+    const gi = document.getElementById('ig-cidades'); gi.textContent = '';
+    if (okI) {
+      cities.forEach(c => {
+        const rs = ig.data.filter(r => r.cidade === c && passes(r, p)).map(r => ({ ...r, posts_7d: Number(r.posts_7d), reels_7d: Number(r.reels_7d), total_7d: Number(r.total_7d), seguidores: Number(r.seguidores) }))
+          .sort((a, b) => (b.lado === 'Grupo Cometa') - (a.lado === 'Grupo Cometa') || b.total_7d - a.total_7d);
+        const card = cardFor(c, 'ig-');
+        const us = rs.find(r => r.lado === 'Grupo Cometa');
+        const sub = document.createElement('div'); sub.className = 'muted';
+        sub.textContent = us ? `Cometa: ${f(us.total_7d)} na semana · ${f(us.seguidores)} seguidores · último post ${fdate(us.ultimo_post)}` : '';
+        card.appendChild(sub);
+        const b = document.createElement('div'); b.className = 'bars'; card.appendChild(b);
+        bars(b, rs, { name: r => r.lado === 'Grupo Cometa' ? r.perfil : r.concorrente, sub: r => `${r.lado === 'Grupo Cometa' ? '' : r.perfil + ' · '}${f(r.seguidores)} seg.`, total: r => r.total_7d, parts: r => [r.posts_7d, r.reels_7d], label: r => f(r.total_7d) + (r.obs.includes('Grade inteira') ? '+' : ''), us: r => r.lado === 'Grupo Cometa', reg: r => r.alcance.startsWith('Regional') });
+        gi.appendChild(card);
+      });
+    } else if (ig.status === 'error') fail(gi);
+    else cities.forEach(() => { const d = document.createElement('div'); d.className = 'card dash-skeleton'; d.style.minHeight = '12rem'; gi.appendChild(d); });
+
+    // Meta
+    const grid = document.getElementById('cidades'); grid.textContent = '';
+    if (okM) {
+      cities.forEach(c => {
+        const rs = m.data.filter(r => r.cidade === c && passes(r, p) && (r.lado === 'Grupo Cometa' || Number(r.anuncios_ativos) > 0))
+          .map(r => ({ ...r, anuncios_ativos: Number(r.anuncios_ativos) })).sort((a, b) => (b.lado === 'Grupo Cometa') - (a.lado === 'Grupo Cometa') || b.anuncios_ativos - a.anuncios_ativos);
+        const card = cardFor(c, 'meta-');
+        const b = document.createElement('div'); b.className = 'bars'; card.appendChild(b);
+        bars(b, rs, { name: r => r.lado === 'Grupo Cometa' ? r.pagina : r.concorrente, sub: r => r.lado === 'Grupo Cometa' ? (r.obs || '') : r.pagina, total: r => r.anuncios_ativos, us: r => r.lado === 'Grupo Cometa', reg: r => r.alcance.startsWith('Regional') });
+        const nf = m.data.filter(r => r.cidade === c && r.alcance.startsWith('Sem') && passes(r, p));
+        if (nf.length) { const n = document.createElement('div'); n.className = 'muted'; n.style.marginTop = '8px'; n.textContent = 'Sem anúncio ativo encontrado: ' + nf.map(r => r.concorrente).join(', '); card.appendChild(n); }
+        grid.appendChild(card);
+      });
+    } else if (m.status === 'error') fail(grid);
+    else cities.forEach(() => { const d = document.createElement('div'); d.className = 'card dash-skeleton'; d.style.minHeight = '12rem'; grid.appendChild(d); });
+
+    // Google
+    const gEl = document.getElementById('gbars');
+    if (g.status === 'ok') {
+      const gr = g.data.filter(r => r.lado === 'Grupo Cometa' || !p.praca || String(r.pracas).includes(p.praca)).map(r => ({ ...r, anuncios: Number(r.anuncios) })).sort((a, b) => b.anuncios - a.anuncios);
+      bars(gEl, gr, { name: r => r.anunciante, sub: r => r.lado === 'Grupo Cometa' ? 'Grupo Cometa' : r.pracas, total: r => r.anuncios, us: r => r.lado === 'Grupo Cometa' });
+    } else if (g.status === 'error') fail(gEl);
+
+    // Tabela
+    document.querySelectorAll('#tabela [data-tab]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.tab === tab)));
+    document.getElementById('wrap-ig').hidden = tab !== 'ig';
+    document.getElementById('wrap-meta').hidden = tab !== 'meta';
+    const src = tab === 'ig' ? ig : m;
+    const tb = document.querySelector(tab === 'ig' ? '#t-ig tbody' : '#t-meta tbody'); tb.textContent = '';
+    const cols = tab === 'ig' ? [['cidade'], ['concorrente'], ['perfil'], ['marca', 'hide-sm'], ['seguidores', 'n'], ['posts_7d', 'n'], ['reels_7d', 'n'], ['total_7d', 'n'], ['ultimo_post', 'hide-sm']] : [['cidade'], ['concorrente'], ['pagina'], ['marca', 'hide-sm'], ['anuncios_ativos', 'n'], ['alcance', 'hide-sm']];
+    if (src.status === 'ok') {
+      const sk = sortK[tab], sd = sortDir[tab];
+      src.data.filter(r => passes(r, p) && (!q || [r.cidade, r.marca, r.concorrente, r.perfil || '', r.pagina || ''].join(' ').toLowerCase().includes(q)))
+        .sort((a, b) => (NUM.has(sk) ? Number(a[sk]) - Number(b[sk]) : String(a[sk]).localeCompare(String(b[sk]), 'pt')) * sd)
+        .forEach(r => {
+          const tr = document.createElement('tr'); tr.dataset.key = r.key; if (r.lado === 'Grupo Cometa') tr.className = 'us';
+          cols.forEach(([c, cl]) => { const td = document.createElement('td'); if (cl) td.className = cl; td.textContent = NUM.has(c) ? f(Number(r[c])) : (c === 'ultimo_post' ? fdate(r[c]) : r[c]); tr.appendChild(td); });
+          tb.appendChild(tr);
+        });
+      document.querySelectorAll(tab === 'ig' ? '#t-ig th' : '#t-meta th').forEach(th => { const k2 = th.querySelector('button').dataset.k; th.setAttribute('aria-sort', k2 === sk ? (sd > 0 ? 'ascending' : 'descending') : 'none'); });
+    }
+  }
+  dash.onData(draw);
+})();
+</script>
