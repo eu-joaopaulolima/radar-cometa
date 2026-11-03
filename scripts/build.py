@@ -14,7 +14,12 @@ data = {
     'instagram': json.load(open(fi, encoding='utf-8')),
     'google': json.load(open(fg, encoding='utf-8')),
 }
-datas = sorted({r.get('data', '') for k in data for r in data[k] if r.get('data')})
+# histórico opcional: dados/historico.json ao lado do arquivo da Meta
+import os
+fh = os.path.join(os.path.dirname(fm), 'historico.json')
+if os.path.exists(fh):
+    data['historico'] = json.load(open(fh, encoding='utf-8'))
+datas = sorted({r.get('data', '') for k in ('meta', 'instagram', 'google') for r in data[k] if r.get('data')})
 ref = datas[-1] if datas else datetime.date.today().isoformat()
 ref_br = f"{ref[8:10]}/{ref[5:7]}/{ref[0:4]}"
 
