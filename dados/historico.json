@@ -2257,5 +2257,1175 @@
   "fonte": "google",
   "item": "Jirauto",
   "valor": 1
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Cáceres",
+  "lado": "Grupo Cometa",
+  "concorrente": "Grupo Cometa",
+  "fonte": "meta",
+  "item": "Cometa Volkswagen Cáceres",
+  "valor": 1
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Tangará da Serra",
+  "lado": "Grupo Cometa",
+  "concorrente": "Grupo Cometa",
+  "fonte": "meta",
+  "item": "Hyundai Cometa Tangará da Serra",
+  "valor": 10
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Grupo Cometa",
+  "concorrente": "Grupo Cometa",
+  "fonte": "meta",
+  "item": "Hyundai Cometa Sinop",
+  "valor": 8
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Rondonópolis",
+  "lado": "Grupo Cometa",
+  "concorrente": "Grupo Cometa",
+  "fonte": "meta",
+  "item": "Hyundai Cometa Rondonópolis",
+  "valor": 2
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Ji-Paraná",
+  "lado": "Grupo Cometa",
+  "concorrente": "Grupo Cometa",
+  "fonte": "meta",
+  "item": "Hyundai Cometa Ji-Paraná",
+  "valor": 1
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Vilhena",
+  "lado": "Grupo Cometa",
+  "concorrente": "Grupo Cometa",
+  "fonte": "meta",
+  "item": "Hyundai Cometa Vilhena",
+  "valor": 1
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Cáceres",
+  "lado": "Concorrente",
+  "concorrente": "Gramarca Chevrolet (Saga)",
+  "fonte": "meta",
+  "item": "Saga Gramarca Chevrolet MT",
+  "valor": 57
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Cáceres",
+  "lado": "Concorrente",
+  "concorrente": "Toyota Canopus",
+  "fonte": "meta",
+  "item": "Toyota Mato Grosso Canopus",
+  "valor": 8
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Tangará da Serra",
+  "lado": "Concorrente",
+  "concorrente": "Toyota Canopus",
+  "fonte": "meta",
+  "item": "Toyota Mato Grosso Canopus",
+  "valor": 8
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Cáceres",
+  "lado": "Concorrente",
+  "concorrente": "Fiat Domani",
+  "fonte": "meta",
+  "item": "Domani Fiat",
+  "valor": 5
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Tangará da Serra",
+  "lado": "Concorrente",
+  "concorrente": "Fiat Domani",
+  "fonte": "meta",
+  "item": "Domani Fiat",
+  "valor": 5
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Cáceres",
+  "lado": "Concorrente",
+  "concorrente": "BYD Saga",
+  "fonte": "meta",
+  "item": "Byd Saga Mato Grosso",
+  "valor": 37
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "BYD Saga",
+  "fonte": "meta",
+  "item": "Byd Saga Mato Grosso",
+  "valor": 37
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Rondonópolis",
+  "lado": "Concorrente",
+  "concorrente": "BYD Saga",
+  "fonte": "meta",
+  "item": "Byd Saga Mato Grosso",
+  "valor": 37
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Cáceres",
+  "lado": "Concorrente",
+  "concorrente": "Disbrava Ford",
+  "fonte": "meta",
+  "item": "Disbrava Ford - Mato Grosso",
+  "valor": 209
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "Disbrava Ford",
+  "fonte": "meta",
+  "item": "Disbrava Ford - Mato Grosso",
+  "valor": 209
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Tangará da Serra",
+  "lado": "Concorrente",
+  "concorrente": "Carolina Veículos VW",
+  "fonte": "meta",
+  "item": "Carolina Veículos",
+  "valor": 4
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "Carolina Veículos VW",
+  "fonte": "meta",
+  "item": "Carolina Veículos",
+  "valor": 4
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Rondonópolis",
+  "lado": "Concorrente",
+  "concorrente": "Carolina Veículos VW",
+  "fonte": "meta",
+  "item": "Carolina Veículos",
+  "valor": 4
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Tangará da Serra",
+  "lado": "Concorrente",
+  "concorrente": "Saga Nissan",
+  "fonte": "meta",
+  "item": "Nissan Saga Mato Grosso",
+  "valor": 30
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Tangará da Serra",
+  "lado": "Concorrente",
+  "concorrente": "Jeep Sunauto",
+  "fonte": "meta",
+  "item": "Jeep Sunauto",
+  "valor": 8
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "Chevrolet Vianorte",
+  "fonte": "meta",
+  "item": "Chevrolet Vianorte",
+  "valor": 10
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "Rodobens Toyota",
+  "fonte": "meta",
+  "item": "Rodobens Toyota",
+  "valor": 89
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Rondonópolis",
+  "lado": "Concorrente",
+  "concorrente": "Rodobens Toyota",
+  "fonte": "meta",
+  "item": "Rodobens Toyota",
+  "valor": 89
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "Renault Morel",
+  "fonte": "meta",
+  "item": "Renault Morel",
+  "valor": 3
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "Jeep Monte Cristo",
+  "fonte": "meta",
+  "item": "Jeep Monte Cristo",
+  "valor": 11
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "GWM Canopus",
+  "fonte": "meta",
+  "item": "GWM Canopus Mato Grosso",
+  "valor": 56
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Rondonópolis",
+  "lado": "Concorrente",
+  "concorrente": "GWM Canopus",
+  "fonte": "meta",
+  "item": "GWM Canopus Mato Grosso",
+  "valor": 56
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "Canopus Nissan / Caoa Chery",
+  "fonte": "meta",
+  "item": "Grupo Canopus",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Rondonópolis",
+  "lado": "Concorrente",
+  "concorrente": "Canopus Nissan / Caoa Chery",
+  "fonte": "meta",
+  "item": "Grupo Canopus",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "Peugeot Via Sul",
+  "fonte": "meta",
+  "item": "Peugeot Via Sul Sinop",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Rondonópolis",
+  "lado": "Concorrente",
+  "concorrente": "Zaher Chevrolet",
+  "fonte": "meta",
+  "item": "Zaher Chevrolet",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Rondonópolis",
+  "lado": "Concorrente",
+  "concorrente": "Renault Fancar",
+  "fonte": "meta",
+  "item": "Renault Fancar",
+  "valor": 5
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Rondonópolis",
+  "lado": "Concorrente",
+  "concorrente": "Honda Auto Campo",
+  "fonte": "meta",
+  "item": "Honda Auto Campo",
+  "valor": 8
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Ji-Paraná",
+  "lado": "Concorrente",
+  "concorrente": "Jirauto VW",
+  "fonte": "meta",
+  "item": "Jirauto Volks",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Ji-Paraná",
+  "lado": "Concorrente",
+  "concorrente": "Jirauto Fiat",
+  "fonte": "meta",
+  "item": "Jirauto",
+  "valor": 15
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Ji-Paraná",
+  "lado": "Concorrente",
+  "concorrente": "Nissey Motors Toyota",
+  "fonte": "meta",
+  "item": "NisseyMotors",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Vilhena",
+  "lado": "Concorrente",
+  "concorrente": "Nissey Motors Toyota",
+  "fonte": "meta",
+  "item": "NisseyMotors",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Ji-Paraná",
+  "lado": "Concorrente",
+  "concorrente": "Vemaq BYD",
+  "fonte": "meta",
+  "item": "Vemaq BYD - Ji-Paraná",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Vilhena",
+  "lado": "Concorrente",
+  "concorrente": "Carevel VW",
+  "fonte": "meta",
+  "item": "Carevel Veículos",
+  "valor": 12
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Vilhena",
+  "lado": "Concorrente",
+  "concorrente": "Vemaq Chevrolet",
+  "fonte": "meta",
+  "item": "Vemaq Veículos (Chevrolet)",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Vilhena",
+  "lado": "Concorrente",
+  "concorrente": "Fiat Autovema",
+  "fonte": "meta",
+  "item": "Fiat Autovema",
+  "valor": 34
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Vilhena",
+  "lado": "Concorrente",
+  "concorrente": "Mazzutti Renault",
+  "fonte": "meta",
+  "item": "Mazzutti Renault",
+  "valor": 3
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "Ascia Fiat",
+  "fonte": "meta",
+  "item": "Ascia Fiat",
+  "valor": 3
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "Ascia Mitsubishi",
+  "fonte": "meta",
+  "item": "Ascia Mit",
+  "valor": 1
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Ji-Paraná",
+  "lado": "Concorrente",
+  "concorrente": "Honda Ivel",
+  "fonte": "meta",
+  "item": "Hondaivel",
+  "valor": 9
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Ji-Paraná",
+  "lado": "Concorrente",
+  "concorrente": "Autovema Mitsubishi",
+  "fonte": "meta",
+  "item": "Autovema Motors Mitsubishi",
+  "valor": 8
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Vilhena",
+  "lado": "Concorrente",
+  "concorrente": "Raviera Jeep",
+  "fonte": "meta",
+  "item": "Raviera Jeep Vilhena",
+  "valor": 7
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Tangará da Serra",
+  "lado": "Concorrente",
+  "concorrente": "Saga Hyundai",
+  "fonte": "meta",
+  "item": "Saga Hyundai Mato Grosso",
+  "valor": 52
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "Saga Hyundai",
+  "fonte": "meta",
+  "item": "Saga Hyundai Mato Grosso",
+  "valor": 52
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Rondonópolis",
+  "lado": "Concorrente",
+  "concorrente": "Saga Hyundai",
+  "fonte": "meta",
+  "item": "Saga Hyundai Mato Grosso",
+  "valor": 52
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Cáceres",
+  "lado": "Grupo Cometa",
+  "concorrente": "Grupo Cometa",
+  "fonte": "instagram",
+  "item": "@cometavw.caceres",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Tangará da Serra",
+  "lado": "Grupo Cometa",
+  "concorrente": "Grupo Cometa",
+  "fonte": "instagram",
+  "item": "@hyundai.cometa.tangara",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Grupo Cometa",
+  "concorrente": "Grupo Cometa",
+  "fonte": "instagram",
+  "item": "@hyundai.cometa.sinop",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Rondonópolis",
+  "lado": "Grupo Cometa",
+  "concorrente": "Grupo Cometa",
+  "fonte": "instagram",
+  "item": "@hyundai.cometa.rondonopolis",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Ji-Paraná",
+  "lado": "Grupo Cometa",
+  "concorrente": "Grupo Cometa",
+  "fonte": "instagram",
+  "item": "@hyundai.cometa.jiparana",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Vilhena",
+  "lado": "Grupo Cometa",
+  "concorrente": "Grupo Cometa",
+  "fonte": "instagram",
+  "item": "@hyundai.cometa.vilhena",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Cáceres",
+  "lado": "Concorrente",
+  "concorrente": "Gramarca Chevrolet (Saga)",
+  "fonte": "instagram",
+  "item": "@gramarcacaceresgm",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Cáceres",
+  "lado": "Concorrente",
+  "concorrente": "Gramarca Chevrolet (Saga)",
+  "fonte": "instagram",
+  "item": "@sagagramarcachevroletmt",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Cáceres",
+  "lado": "Concorrente",
+  "concorrente": "Toyota Canopus",
+  "fonte": "instagram",
+  "item": "@toyotamatogrossocanopus",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Tangará da Serra",
+  "lado": "Concorrente",
+  "concorrente": "Toyota Canopus",
+  "fonte": "instagram",
+  "item": "@toyotamatogrossocanopus",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Cáceres",
+  "lado": "Concorrente",
+  "concorrente": "Fiat Domani",
+  "fonte": "instagram",
+  "item": "@domanifiat",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Tangará da Serra",
+  "lado": "Concorrente",
+  "concorrente": "Fiat Domani",
+  "fonte": "instagram",
+  "item": "@domanifiat",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Cáceres",
+  "lado": "Concorrente",
+  "concorrente": "BYD Saga",
+  "fonte": "instagram",
+  "item": "@bydsagacaceres",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "BYD Saga",
+  "fonte": "instagram",
+  "item": "@sagabydsinop",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Cáceres",
+  "lado": "Concorrente",
+  "concorrente": "Disbrava Ford",
+  "fonte": "instagram",
+  "item": "@disbravafordmt_",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "Disbrava Ford",
+  "fonte": "instagram",
+  "item": "@disbravafordmt_",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Tangará da Serra",
+  "lado": "Concorrente",
+  "concorrente": "Carolina Veículos VW",
+  "fonte": "instagram",
+  "item": "@carolinaveiculosoficial",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "Carolina Veículos VW",
+  "fonte": "instagram",
+  "item": "@carolinaveiculosoficial",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Rondonópolis",
+  "lado": "Concorrente",
+  "concorrente": "Carolina Veículos VW",
+  "fonte": "instagram",
+  "item": "@carolinaveiculosoficial",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Tangará da Serra",
+  "lado": "Concorrente",
+  "concorrente": "Chevrolet Oeste",
+  "fonte": "instagram",
+  "item": "@oestechevrolet",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Tangará da Serra",
+  "lado": "Concorrente",
+  "concorrente": "Saga Nissan",
+  "fonte": "instagram",
+  "item": "@saganissanmtoficial",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Tangará da Serra",
+  "lado": "Concorrente",
+  "concorrente": "Jeep Sunauto",
+  "fonte": "instagram",
+  "item": "@jeepsunauto",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "Chevrolet Vianorte",
+  "fonte": "instagram",
+  "item": "@chevroletvianorte",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "Ascia Fiat",
+  "fonte": "instagram",
+  "item": "@asciafiat",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "Ascia Mitsubishi",
+  "fonte": "instagram",
+  "item": "@asciamit",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "Rodobens Toyota",
+  "fonte": "instagram",
+  "item": "@rodobenstoyota",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Rondonópolis",
+  "lado": "Concorrente",
+  "concorrente": "Rodobens Toyota",
+  "fonte": "instagram",
+  "item": "@rodobenstoyota",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "Renault Morel",
+  "fonte": "instagram",
+  "item": "@renaultmorel",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "Jeep Monte Cristo",
+  "fonte": "instagram",
+  "item": "@jeepmontecristooficial",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "Canopus Nissan / Caoa Chery",
+  "fonte": "instagram",
+  "item": "@canopusnissan",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Rondonópolis",
+  "lado": "Concorrente",
+  "concorrente": "Canopus Nissan / Caoa Chery",
+  "fonte": "instagram",
+  "item": "@canopusnissan",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "Canopus Nissan / Caoa Chery",
+  "fonte": "instagram",
+  "item": "@caoacherymatogrossocanopus",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Rondonópolis",
+  "lado": "Concorrente",
+  "concorrente": "Canopus Nissan / Caoa Chery",
+  "fonte": "instagram",
+  "item": "@caoacherymatogrossocanopus",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "GWM Canopus",
+  "fonte": "instagram",
+  "item": "@gwmcanopusmatogrosso",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Rondonópolis",
+  "lado": "Concorrente",
+  "concorrente": "GWM Canopus",
+  "fonte": "instagram",
+  "item": "@gwmcanopusmatogrosso",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "Peugeot Via Sul",
+  "fonte": "instagram",
+  "item": "@peugeotviasulsinop",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Rondonópolis",
+  "lado": "Concorrente",
+  "concorrente": "Zaher Chevrolet",
+  "fonte": "instagram",
+  "item": "@zaherchevrolet",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Rondonópolis",
+  "lado": "Concorrente",
+  "concorrente": "Mônaco Fiat",
+  "fonte": "instagram",
+  "item": "@monacoveiculosfiatco",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Rondonópolis",
+  "lado": "Concorrente",
+  "concorrente": "Renault Fancar",
+  "fonte": "instagram",
+  "item": "@renault.fancar",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Rondonópolis",
+  "lado": "Concorrente",
+  "concorrente": "Ford Fancar",
+  "fonte": "instagram",
+  "item": "@fordfancar",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Rondonópolis",
+  "lado": "Concorrente",
+  "concorrente": "Jeep Domani",
+  "fonte": "instagram",
+  "item": "@jeepdomaniprime",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Rondonópolis",
+  "lado": "Concorrente",
+  "concorrente": "Honda Auto Campo",
+  "fonte": "instagram",
+  "item": "@autocampohonda",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Ji-Paraná",
+  "lado": "Concorrente",
+  "concorrente": "Jirauto Fiat",
+  "fonte": "instagram",
+  "item": "@jirauto",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Ji-Paraná",
+  "lado": "Concorrente",
+  "concorrente": "Jirauto VW",
+  "fonte": "instagram",
+  "item": "@jirautovolks",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Ji-Paraná",
+  "lado": "Concorrente",
+  "concorrente": "Nissey Motors Toyota",
+  "fonte": "instagram",
+  "item": "@nisseymotorstoyota",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Vilhena",
+  "lado": "Concorrente",
+  "concorrente": "Nissey Motors Toyota",
+  "fonte": "instagram",
+  "item": "@nisseymotorstoyota",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Ji-Paraná",
+  "lado": "Concorrente",
+  "concorrente": "Raviera Jeep",
+  "fonte": "instagram",
+  "item": "@ravierajeepjiparana",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Ji-Paraná",
+  "lado": "Concorrente",
+  "concorrente": "Honda Ivel",
+  "fonte": "instagram",
+  "item": "@hondaivel",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Ji-Paraná",
+  "lado": "Concorrente",
+  "concorrente": "Vemaq BYD",
+  "fonte": "instagram",
+  "item": "@vemaqbyd.jiparana",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Ji-Paraná",
+  "lado": "Concorrente",
+  "concorrente": "Autovema Mitsubishi",
+  "fonte": "instagram",
+  "item": "@autovema.mitsubishi",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Vilhena",
+  "lado": "Concorrente",
+  "concorrente": "Vemaq Chevrolet",
+  "fonte": "instagram",
+  "item": "@vemaqchevrolet",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Vilhena",
+  "lado": "Concorrente",
+  "concorrente": "Fiat Autovema",
+  "fonte": "instagram",
+  "item": "@fiat.autovema",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Vilhena",
+  "lado": "Concorrente",
+  "concorrente": "Autovema Peugeot",
+  "fonte": "instagram",
+  "item": "@autovema.peugeot",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Vilhena",
+  "lado": "Concorrente",
+  "concorrente": "Carevel VW",
+  "fonte": "instagram",
+  "item": "@carevelveiculos",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Vilhena",
+  "lado": "Concorrente",
+  "concorrente": "Mazzutti Renault",
+  "fonte": "instagram",
+  "item": "@mazzuttirenault",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Vilhena",
+  "lado": "Concorrente",
+  "concorrente": "Raviera Jeep",
+  "fonte": "instagram",
+  "item": "@ravierajeepvilhena",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Cáceres",
+  "lado": "Concorrente",
+  "concorrente": "BYD Saga",
+  "fonte": "instagram",
+  "item": "@bydsagamatogrosso",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "BYD Saga",
+  "fonte": "instagram",
+  "item": "@bydsagamatogrosso",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Rondonópolis",
+  "lado": "Concorrente",
+  "concorrente": "BYD Saga",
+  "fonte": "instagram",
+  "item": "@bydsagamatogrosso",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Tangará da Serra",
+  "lado": "Concorrente",
+  "concorrente": "Saga Hyundai",
+  "fonte": "instagram",
+  "item": "@hyundaisagavg",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Tangará da Serra",
+  "lado": "Concorrente",
+  "concorrente": "Saga Hyundai",
+  "fonte": "instagram",
+  "item": "@hyundaisagacuiaba",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "Saga Hyundai",
+  "fonte": "instagram",
+  "item": "@hyundaisagavg",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "Saga Hyundai",
+  "fonte": "instagram",
+  "item": "@hyundaisagacuiaba",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Rondonópolis",
+  "lado": "Concorrente",
+  "concorrente": "Saga Hyundai",
+  "fonte": "instagram",
+  "item": "@hyundaisagavg",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Rondonópolis",
+  "lado": "Concorrente",
+  "concorrente": "Saga Hyundai",
+  "fonte": "instagram",
+  "item": "@hyundaisagacuiaba",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Nosso",
+  "lado": "Grupo Cometa",
+  "concorrente": "Grupo Cometa (3 CNPJs: RO, MT, Ji-Paraná)",
+  "fonte": "google",
+  "item": "Grupo Cometa (3 CNPJs: RO, MT, Ji-Paraná)",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Ji-Paraná, Vilhena",
+  "lado": "Concorrente",
+  "concorrente": "Raviera (Jeep, 5 CNPJs)",
+  "fonte": "google",
+  "item": "Raviera (Jeep, 5 CNPJs)",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Rondonópolis",
+  "lado": "Concorrente",
+  "concorrente": "Fancar (grupo, 9 CNPJs)",
+  "fonte": "google",
+  "item": "Fancar (grupo, 9 CNPJs)",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Tangará da Serra",
+  "lado": "Concorrente",
+  "concorrente": "Sunauto (Jeep/RAM)",
+  "fonte": "google",
+  "item": "Sunauto (Jeep/RAM)",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Cáceres, Tangará, Rondonópolis",
+  "lado": "Concorrente",
+  "concorrente": "Domani (3 CNPJs)",
+  "fonte": "google",
+  "item": "Domani (3 CNPJs)",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Vilhena",
+  "lado": "Concorrente",
+  "concorrente": "Carevel (VW)",
+  "fonte": "google",
+  "item": "Carevel (VW)",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "Ascia (Fiat/Mitsubishi)",
+  "fonte": "google",
+  "item": "Ascia (Fiat/Mitsubishi)",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Cáceres, Tangará, Sinop, Rondonópolis",
+  "lado": "Concorrente",
+  "concorrente": "Saga Brasil",
+  "fonte": "google",
+  "item": "Saga Brasil",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Ji-Paraná, Vilhena",
+  "lado": "Concorrente",
+  "concorrente": "Autovema (Fiat/Peugeot/Mitsubishi)",
+  "fonte": "google",
+  "item": "Autovema (Fiat/Peugeot/Mitsubishi)",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Ji-Paraná, Vilhena",
+  "lado": "Concorrente",
+  "concorrente": "Vemaq (Chevrolet/BYD)",
+  "fonte": "google",
+  "item": "Vemaq (Chevrolet/BYD)",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Rondonópolis",
+  "lado": "Concorrente",
+  "concorrente": "Zaher & Cia (Chevrolet)",
+  "fonte": "google",
+  "item": "Zaher & Cia (Chevrolet)",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Vilhena",
+  "lado": "Concorrente",
+  "concorrente": "Mazzutti (Renault)",
+  "fonte": "google",
+  "item": "Mazzutti (Renault)",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Sinop",
+  "lado": "Concorrente",
+  "concorrente": "Chevrolet Vianorte",
+  "fonte": "google",
+  "item": "Chevrolet Vianorte",
+  "valor": null
+ },
+ {
+  "semana": "2026-11-09",
+  "cidade": "Ji-Paraná",
+  "lado": "Concorrente",
+  "concorrente": "Jirauto",
+  "fonte": "google",
+  "item": "Jirauto",
+  "valor": null
  }
 ]
